@@ -3,7 +3,7 @@ import multiplicar from "./multiplicador";
 
 const first = document.querySelector("#primer-numero");
 const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const form = document.querySelector("#operacion-form"); // Corregido el ID del formulario
 const sumarRadio = document.querySelector("#sumar-radio");
 const multiplicarRadio = document.querySelector("#multiplicar-radio");
 const div = document.querySelector("#resultado-div");
@@ -23,3 +23,4 @@ form.addEventListener("submit", (event) => {
 
   div.innerHTML = "<p>" + resultado + "</p>";
 });
+
